@@ -1510,7 +1510,7 @@ bool UTTToolboxBlueprintLibrary::AddIKBoneChains(UIKRigDefinition* IKRigDefiniti
 #elif ENGINE_MAJOR_VERSION ==	5 && (ENGINE_MINOR_VERSION >= 1 && ENGINE_MINOR_VERSION <= 2)
     ikRigController->AddRetargetChain({ boneChain.ChainName, boneChain.StartBone, boneChain.EndBone });
 #elif ENGINE_MAJOR_VERSION ==	5 && (ENGINE_MINOR_VERSION >= 3)
-    ikRigController->AddRetargetChain({boneChain.ChainName, boneChain.StartBone, boneChain.EndBone, boneChain.IKGoalName});
+    ikRigController->AddRetargetChain(boneChain.ChainName, boneChain.StartBone, boneChain.EndBone, boneChain.IKGoalName);
 #endif
 
   }
