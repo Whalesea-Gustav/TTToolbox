@@ -67,7 +67,7 @@ void UIKRig_CopyPose::Solve(FIKRigSkeleton& IKRigSkeleton, const FIKRigGoalConta
 
 FText UIKRig_CopyPose::GetNiceName() const
 {
-	return FText(LOCTEXT("SolverName", "Constraint Bones"));
+	return FText(LOCTEXT("SolverName", "Copy Pose Bones"));
 }
 
 bool UIKRig_CopyPose::IsBoneAffectedBySolver(const FName& BoneName, const FIKRigSkeleton& IKRigSkeleton) const
